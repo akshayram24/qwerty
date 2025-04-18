@@ -3,6 +3,6 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-COPY app.py .
+COPY hello_world.py .
 
-CMD ["python", "app.py"]
+CMD ["python", "hello_world.py"]
