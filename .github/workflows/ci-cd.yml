@@ -23,9 +23,8 @@ jobs:
         python-version: '3.11'
 
     - name: Build Docker image
-      run: |
-        docker build -t ghcr.io/${{ github.repository }}/python-hello-world:latest .
+      run: docker build -t ghcr.io/akshayram24/python-hello-world:latest .
 
     - name: Push Docker image to GitHub Packages
-      run: |
-        docker push ghcr.io/${{ github.repository }}/python-hello-world:latest
+      run: docker push ghcr.io/akshayram24/python-hello-world:latest
+
